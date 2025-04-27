@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miłosny Kliker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon-192.png" type="image/png">
+    <meta name="theme-color" content="#ff7e9f">
+</head>
+<body>
+    <div id="main">
+        <h1>Miłosny Kliker</h1>
+        <h2 id="counter">Kliknięcia: 0</h2>
+        <button id="clickButton">Kliknij mnie!</button>
+
+        <h3>Ulepszenia</h3>
+        <div id="upgrades">
+            <button onclick="buyUpgrade('cps')">Kup AutoKliker (+1 CPS) - 50 kliknięć</button>
+            <button onclick="buyUpgrade('clickPower')">Wzmocnienie Kliku (+1 klik) - 30 kliknięć</button>
+        </div>
+
+        <h3>Twoje Usługi</h3>
+        <div id="services">
+            <input type="text" id="serviceName" placeholder="Nazwa usługi">
+            <input type="number" id="servicePrice" placeholder="Cena usługi">
+            <button onclick="addService()">Dodaj usługę</button>
+            <div id="serviceList"></div>
+        </div>
+
+        <button id="settingsButton" onclick="openSettings()">Ustawienia</button>
+
+        <div id="modMenu" style="display: none;">
+            <h3>MOD MENU</h3>
+            <input type="number" id="addClicksAmount" placeholder="Ile dodać kliknięć">
+            <button onclick="addClicks()">Dodaj kliknięcia</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
