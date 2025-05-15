@@ -1,13 +1,13 @@
 {
   "name": "Odliczanie do 18-stki",
-  "short_name": "18-stka",
+  "short_name": "18",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "F4968CE6-873D-47CB-A158-769E9FBBC6D4.webp",
       "sizes": "192x192",
       "type": "image/png"
     }
